@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class #SCRIPTNAME#JumpState : BaseState<#SCRIPTNAME#Core, #SCRIPTNAME#States>
+{
+    public #SCRIPTNAME#JumpState(#SCRIPTNAME#Core contextCore, #SCRIPTNAME#States States) : base (contextCore, States)
+    {
+    }
+
+    public override void StateEnter()
+    {
+
+    }
+
+    public override void StateUpdate()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+            SwitchState(States.Idle());
+    }
+    public override void StateFixedUpdate()
+    {
+
+    }
+
+    public override void StateExit()
+    {
+        
+    }
+}

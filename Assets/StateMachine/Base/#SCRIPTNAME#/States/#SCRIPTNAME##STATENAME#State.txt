@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class #SCRIPTNAME##STATENAME#State : BaseState<#SCRIPTNAME#Core, #SCRIPTNAME#States>
+{
+    public #SCRIPTNAME##STATENAME#State(#SCRIPTNAME#Core contextCore, #SCRIPTNAME#States States) : base (contextCore, States)
+    {
+    }
+
+    public override void StateEnter()
+    {
+        
+    }
+
+    public override void StateUpdate()
+    {
+        
+    }
+    public override void StateFixedUpdate()
+    {
+
+    }
+
+    public override void StateExit()
+    {
+        
+    }
+    public override void OnHurt(HitRequest hitRequest, ref HitResult hitResult)
+    {
+        base.OnHurt(hitRequest, ref hitResult);
+    }
+}

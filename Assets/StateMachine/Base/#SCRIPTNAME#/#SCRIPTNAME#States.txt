@@ -1,0 +1,17 @@
+using System.Collections.Generic;
+public class #SCRIPTNAME#States : States<#SCRIPTNAME#Core, #SCRIPTNAME#States>
+{
+    Dictionary<State, BaseState<#SCRIPTNAME#Core, #SCRIPTNAME#States>> _states = new Dictionary<State, BaseState<#SCRIPTNAME#Core, #SCRIPTNAME#States>>();
+    
+    enum State
+    {
+        #STATESENUM#
+    }
+    public #SCRIPTNAME#States(#SCRIPTNAME#Core contextCore) : base (contextCore)
+    {
+#STATESCONSTRUCTOR#
+    }
+
+#STATESSWITCHMETHODS#
+    
+}

@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class #SCRIPTNAME#IdleState : BaseState<#SCRIPTNAME#Core, #SCRIPTNAME#States>
+{
+    public #SCRIPTNAME#IdleState(#SCRIPTNAME#Core contextCore, #SCRIPTNAME#States States) : base (contextCore, States)
+    {
+    }
+
+    public override void StateEnter()
+    {
+        Core.OnEnterIdle();
+    }
+
+    public override void StateUpdate()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+            SwitchState(States.Jump());
+    }
+    public override void StateFixedUpdate()
+    {
+
+    }
+
+    public override void StateExit()
+    {
+        
+    }
+    public override void OnHurt(HitRequest hitRequest, ref HitResult hitResult)
+    {
+        base.OnHurt(hitRequest, ref hitResult);
+    }
+}
